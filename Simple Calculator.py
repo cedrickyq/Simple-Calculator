@@ -41,7 +41,7 @@ def Addition():
     Total = First_number + Second_number
     print(colored(f"\nResult: {Total}", "red"))
     Options()
-  except:
+  except ValueError:
     print(colored("\nInvalid input.", "red"))
     Addition()
 
@@ -54,7 +54,7 @@ def Subtraction():
     Total = First_number - Second_number
     print(colored(f"\nResult: {Total}", "red"))
     Options()
-  except:
+  except ValueError:
     print(colored("\nInvalid input.", "red"))
     Subtraction()
 
@@ -67,7 +67,7 @@ def Multiplication():
     Total = First_number * Second_number
     print(colored(f"\nResult: {Total}", "red"))
     Options()
-  except:
+  except ValueError:
     print(colored("\nInvalid input.", "red"))
     Multiplication()
 
