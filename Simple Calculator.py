@@ -1,17 +1,20 @@
 # Import of libraries
 from termcolor import colored
 
+
 # Display of options
 def Display():
   print(colored("\nOptions:\n--------\n0: Exit\n1: Addition\n2: Subtraction\n3: Multiplication\n4: Division", "blue"))
   Input()
 
+  
 # Input of option
 def Input():
   global Option
   Option = input(colored("\nOption: ", "blue"))
   Options()
 
+  
 # Sorting of options
 def Options():
   if Option == "0":
@@ -27,11 +30,13 @@ def Options():
   else:
     print(colored("\nInvalid input.", "red"))
 
+    
 # Exit
 def Exit():
   print(colored("\nScript exiting...", "red"))
   exit()
 
+  
 # Addition
 def Addition():
   try:
@@ -45,6 +50,7 @@ def Addition():
     print(colored("\nInvalid input.", "red"))
     Addition()
 
+    
 # Subtraction
 def Subtraction():
   try:
@@ -58,6 +64,7 @@ def Subtraction():
     print(colored("\nInvalid input.", "red"))
     Subtraction()
 
+    
 # Multiplication
 def Multiplication():
   try:
@@ -71,6 +78,7 @@ def Multiplication():
     print(colored("\nInvalid input.", "red"))
     Multiplication()
 
+    
 # Division
 def Division():
   try:
@@ -87,4 +95,5 @@ def Division():
     print(colored("\nUnable to divide by 0.", "red"))
     Division()
 
+    
 Display()
